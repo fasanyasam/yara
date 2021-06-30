@@ -1,10 +1,4 @@
 
-:root{
-    --lora: 'Lora', serif;
-    --roboto: 'Roboto', sans-serif;
-    --orange:#F6A51A ;
-}
-
 body{
     margin: 0;
     padding: 0;  
@@ -14,12 +8,35 @@ body{
     display: grid;
     grid-template-columns: auto auto;
 }
+#bg-frame{
+    width: 100%;
+    overflow: hidden;
+}
 
-#bg{
-    height: 100%;
-    width: 80%;
+#bg-frame img {
     position: absolute;
-    right: -200px;
+    right: -1%;
+    top: -3%;
+    width: 50%;
+    z-index: -2;
+}
+/* #bg{
+} */
+#header-section{
+    padding-top: 10%;
+    margin-bottom: 5%;
+}
+#cards-section{
+    margin-bottom: 10%;
+}
+
+#about-app{
+    margin-bottom: 25%;
+}
+
+#bg img{
+    background-size:contain;
+    overflow-x: hidden;
 }
 .navbar{
     padding: 30px 0;
@@ -89,10 +106,65 @@ h1{
     height: 65px;
     width: 65px;
     margin: auto;
+    border-radius: 50%;
 }
 
 .product-list{
     padding: 10px ;
+}
+
+#app-features{
+    margin-bottom: 10%;
+}
+.profile-pics{
+    position: relative;
+    bottom:60px;
+    border: solid 8px;
+}
+#testimonial-header{
+    margin-bottom: 10%;
+}
+
+.testimonial-card{
+    border: none;
+    border-radius: 30px;
+    padding: 0 20px 20px 20px ;
+}
+
+.rating{
+    background-image: url(../images/ant-design_star-filled.svg);
+    background-repeat: repeat-x ;
+    background-size: contain; 
+    height: 40px;
+    width: 200px;
+    margin: auto;
+}
+
+#slider img{
+    width: 20%;
+}
+
+#slider{
+    margin:auto;
+    margin: 20px;
+    text-align: center;
+}
+#subscribe, #app-screenshots{
+    margin-top: 5%;
+}
+
+input {
+    padding: 1% 9%;
+}
+
+
+
+.sub-btn {
+    /* margin: 3% 2% 0 0; */
+    border: none;
+    padding: 1% 4%;
+    position: relative;
+    right: 14%;
 }
 
 /* main{
@@ -103,3 +175,16 @@ h1{
     right:-10%;
 } */
 
+footer{
+    padding:3%
+}
+
+
+
+
+@media (max-width: 460px) {
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+}

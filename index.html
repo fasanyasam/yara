@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <title> YARA </title>
@@ -40,9 +41,10 @@
         </div>
     </nav>
     <main class="container" >
-        <img id="bg" class="img-fluid " src="images/Pattern.svg" alt="">
-        <br><br><br><br>
-        <section class="row">
+        <div id="bg-frame">
+            <img id="bg" class="img-fluid " src="images/Pattern.svg" alt="">
+        </div>
+        <section id="header-section" class="row">
             <div class="col-sm-6">
                 <br><br><br><br><br>
                 <h2 id="header" > First Class Access to Fashion. </h2> 
@@ -74,28 +76,29 @@
             </div>
 
         </section>
-        <br><br><br> <br><br><br><br>
-        <section>
-            <div class="card-group gap-4 ">
+        
+        
+        <section id="cards-section">
+            <div class="card-deck ">
                 <div class="card border-warning text-center rounded-card ">
                     <img src="images/carbon_download.svg" alt="" class="icon m-auto">
-                    <h3 class="cardheader">1.7M+</h3>
+                    <h3 class="card-title">1.7M+</h3>
                     <p class="cardbody"> Number of Downloads</p>
                 </div>
                 <div class="card border-warning text-center rounded-card ">
                     <img src="images/bx_bx-like.svg" alt="" class="icon m-auto">
-                    <h3 class="cardheader">59.9M+</h3>
+                    <h3 class="card-title">59.9M+</h3>
                     <p class="cardbody"> Number of Likes</p>
                 </div>
                 <div class="card border-warning text-center rounded-card ">
                     <img src="images/gg_shopping-bag.svg" alt="" class="icon m-auto">
-                    <h3 class="cardheader">30.32M+</h3>
+                    <h3 class="card-title">30.32M+</h3>
                     <p class="cardbody"> Number of Products Sold</p>
                 </div>
             </div>
         </section>
-        <br><br><br><br> 
-        <section class="row gap-2">
+        <!-- <br><br><br><br>  -->
+        <section id="about-app" class="row gap-5">
             <div id="image" class="col-sm-5 "> 
                 <img id="pattern" class="img-fluid " src="images/Pattern (1).svg" alt="">
                 <img id="shape" class="img-fluid " src="images/circle.png" alt="">
@@ -108,45 +111,273 @@
             </div>
         </section>
 
-        <br><br><br><br> <br> 
-        <section>
-            <h2> App Design Features </h2>
-            <p> These are the features you may need to watchout for when exploring our app </p>
+        <!-- <br><br><br><br> <br>  -->
+        <section id="app-features">
+            <div class="text-center">
+                <h2> App Design Features </h2>
+                <p> These are the features you may need to watchout for when exploring our app </p>
+                <br> <br>
+            </div>
+            <!-- row for the about section  -->
             <div class="row">
+                <!-- column one for the text to the left of the product  -->
                 <div class="col">
-                    <div class="row">
+                    <!-- new row to set the each items on the list in perspective  -->
+                    <div class="row"> 
+                        <!-- two columns for the items text and icons  -->
                         <div class="col " >
+                            <!-- text column  -->
                             <h3> Products Scan </h3>
                             <p> Products can easily be scanned from an image with the use of Augmented Reality (AR) technology </p>
                         </div>
+                        <!-- icons columns  -->
                         <div class="col ">
                             <div class="dotted-circle">
                                 <img class="product-list" src="images/product 1.svg" alt="">
                             </div>
                         </div>
                     </div>
+                    <!-- second row for items on the list  -->
+                    <div class="row"> 
+                        <!-- two columns for the items text and icons  -->
+                        <div class="col " >
+                            <!-- text column  -->
+                            <h3> Secured Payment System </h3>
+                            <p> The most trusted payment gateway is used to get you secured from been a victim when carting how products. </p>
+                        </div>
+                        <!-- icons columns  -->
+                        <div class="col ">
+                            <div class="dotted-circle">
+                                <img class="product-list" src="images/secure-payment (1) 1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row"> 
+                        <!-- two columns for the items text and icons  -->
+                        <div class="col " >
+                            <!-- text column  -->
+                            <h3> Social Login </h3>
+                            <p> The use of google login system is been deployed to help the user login into the app without stress. </p>
+                        </div>
+                        <!-- icons columns  -->
+                        <div class="col ">
+                            <div class="dotted-circle">
+                                <img class="product-list" src="images/login 1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- column for the image in the middle  -->
                 <div class="col">
+                    <!-- product image  -->
                     <img src="images/iPhone X Clay (7) 2.png" alt="">
                 </div>
                 <div class="col">
-                    <div class="row">
+                    <!-- new row to set the each items on the list in perspective  -->
+                    <div class="row"> 
+                        <!-- icons columns  -->
                         <div class="col ">
                             <div class="dotted-circle">
-                                <img class="product-list" src="images/product 1.svg" alt="">
+                                <img class="product-list" src="images/gender-symbols 1.svg" alt="">
                             </div>
                         </div>
+                        <!-- two columns for the items text and icons  -->
                         <div class="col " >
-                            <h3> Products Scan </h3>
-                            <p> Products can easily be scanned from an image with the use of Augmented Reality (AR) technology </p>
+                            <!-- text column  -->
+                            <h3> Gender Based Collections  </h3>
+                            <p> When entering into the app your gender will be requested to get you the precise collection based on your gender but you can easily change it in the settings. </p>
                         </div>
-                        
+                    </div>
+                    <!-- second row for items on the list  -->
+                    <div class="row"> 
+                        <!-- icons columns  -->
+                        <div class="col ">
+                            <div class="dotted-circle">
+                                <img class="product-list" src="images/encyclopedia 1.svg" alt="">
+                            </div>
+                        </div>
+                        <!-- two columns for the items text and icons  -->
+                        <div class="col " >
+                            <!-- text column  -->
+                            <h3> Full Detailed Lookbook</h3>
+                            <p> Every Fashion trends on our app has a detailed explanation of it and how to get the products, you can easily purchase them.</p>
+                        </div>
+                    </div>
+                    <div class="row"> 
+                        <!-- icons columns  -->
+                        <div class="col ">
+                            <div class="dotted-circle ">
+                                <img class="product-list" src="images/navigate.svg" alt="">
+                            </div>
+                        </div>
+                        <!-- two columns for the items text and icons  -->
+                        <div class="col " >
+                            <!-- text column  -->
+                            <h3> Easy Navigation </h3>
+                            <p> The app in general is simple and it is easy to Navigate to avoid the users not to go through unnecessary stress. </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <section id="textimonials">
+            <div class="text-center " id="testimonial-header">
+                <h2> What People Are Saying </h2>
+                <p>Checkout people's reviews on our app from the internet </p>
+            </div>
+            <div class="card-deck text-white">
+                <div class="card text-center testimonial-card  border-white bg-warning ">
+                    <div class="card-img " >
+                        <img class=" rounded-circle border-white profile-pics" src="images/wade.png" alt="">
+                    </div>
+                    <div class="card-title">
+                        <h3> Wade Warren </h3>
+                    </div>
+                    <div class="cardbody">
+                        <p> Adipiscing lobortis proin et viverra. Est, odio dui pulvinar ut egestas lacus nunc in diam. Eleifend neque varius eget maecenas. At nec odio eget.</p>
+                        <div class="rating" > </div>
+                    </div>
+                </div>
+                <div class="card text-center testimonial-card  border-white bg-warning ">
+                    <div class="card-img " >
+                        <img class=" rounded-circle border-white profile-pics" src="images/Group 19.png" alt="">
+                    </div>
+                    <div class="card-title">
+                        <h3> Wade Warren </h3>
+                    </div>
+                    <div class="cardbody">
+                        <p> Adipiscing lobortis proin et viverra. Est, odio dui pulvinar ut egestas lacus nunc in diam. Eleifend neque varius eget maecenas. At nec odio eget.</p>
+                        <div class="rating" > </div>
+                    </div>
+                </div>
+                <div class="card text-center testimonial-card  border-white bg-warning ">
+                    <div class="card-img " >
+                        <img class=" rounded-circle border-white profile-pics" src="images/Group 20.png" alt="">
+                    </div>
+                    <div class="card-title">
+                        <h3> Wade Warren </h3>
+                    </div>
+                    <div class="cardbody">
+                        <p> Adipiscing lobortis proin et viverra. Est, odio dui pulvinar ut egestas lacus nunc in diam. Eleifend neque varius eget maecenas. At nec odio eget.</p>
+                        <div class="rating" > </div>
+                    </div>
+                </div>
+            </div>
+            <div id="slider" >
+                <img  src="images/scroll.svg" alt="">
+            </div>
+        </section>
+
+        <section id="how-it-works">
+            <h2 class="text-center" > How It Works </h2>
+            <div class="card-deck">
+                <div class="card border-warning rounded-card"> 
+                    <div class="card-img">
+                        <img src="images/cursor-click.svg" alt="">
+                    </div> 
+                    <div class="card-header">
+                        <h4> Choose From Our Fashion Trends </h4>
+                    </div> 
+                    <div class="card-body">
+                        <p> We all alots of fashion trends in how list in which you can read about and choose from. </p>
+                    </div>
+                </div>
+                <div class="card border-warning rounded-card"> 
+                    <div class="card-img">
+                        <img src="images/wpf_facial-recognition-scan.svg" alt="">
+                    </div> 
+                    <div class="card-header">
+                        <h4> Scan the trends and get the products. </h4>
+                    </div> 
+                    <div class="card-body">
+                        <p> Using the AR technology you can scan your favourite fashiontrend and get the products details and ready to cart.  </p>
+                    </div>
+                </div>
+
+                <div class="card border-warning rounded-card"> 
+                    <div class="card-img">
+                        <img src="images/clarity_shopping-cart-solid-badged.svg" alt="">
+                    </div> 
+                    <div class="card-header">
+                        <h4> Add the products to your cart and proceed </h4>
+                    </div> 
+                    <div class="card-body">
+                        <p> You can add the product to your cart and continue exploring or proceed to the payment and card it out for fast delivery. </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section id="app-screenshots">
+            <h2 class="text-center"> App Screenshots </h2>
+         <div class="row">
+             <div class="col">
+                 <img class="img-fluid" src="images/iPhone X Clay (6) 2.png" alt="">
+             </div>
+             <div class="col">
+                 <img class="img-fluid" src="images/iPhone X Clay (7) 2.png" alt="">
+             </div>
+             <div class="col">
+                 <img class="img-fluid" src="images/iPhone X Clay (8) 1.png" alt="">
+             </div>
+         </div>
+         <div class="row gap-4 text-center  ">
+             <button class="btn col-sm-1 btn-warning btn-sm rounded-pill app-download" > 
+                 <div class="row">
+                     <img class="icon col" src="images/ion_logo-google-playstore.svg" alt=""> 
+                     <p class="col"> Download on <br> <span class="bold-button-text">Google Play </span> </p> 
+                    </div>
+                </button>
+                <button class="btn col-sm-1  btn-warning btn-sm rounded-pill app-download" > 
+                    <div class="row">
+                        <img class="icon col" src="images/ls_iphone.svg" alt=""> 
+                        <p class="col"> Download on <br> <span class="bold-button-text">App Store </span> </p> 
+                    </div>
+                </button>
+            </div>
+        </section>
+        <section id="subscribe" >
+            <div class="text-center">
+                <h2> Subscribe To Our Newsletter </h2>
+                <p> Are you interested in getting more update about the latest update and future releases? </p>
+                <div class="buttonIn">
+                    <input class="rounded-pill border-warning search" type="search" id="enter" placeholder="Enter Your Email">
+                    <button class="btn-warning text-white rounded-pill sub-btn" id="clear">Subscribe</button>
+                  </div>
+            </div>
+        </section>
     </main>
+    <br><br>
+        <footer class="footer bg-warning text-white container-fluid " >
+                <div class=" container row">
+                    <div class="col">
+                        <header> YARA</header>
+                        <p> Yara is an international fashion brand with the sole purpose of getting the user updated about fashion trends. </p>
+                    </div>
+                    <div class="col">
+                        <header> Useful Links </header>
+                        <ul class="list-unstyled " >
+                            <li>About </li>
+                            <li> Services</li>
+                            <li> Testimonial </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <header>Social Links </header>
+                        <div class="row">
+                            <div class="col"> <img src="images/facebook.svg" alt=""> </div>
+                            <div class="col"> <img src="images/twitter.svg" alt=""> </div>
+                            <div class="col"> <img src="images/instagram.svg" alt=""> </div>
+                            <div class="col"> <img src="images/youtube.svg" alt=""> </div>
+                        </div>
+                    </div>
+                </div>
+
+        </footer>
+
 
 
 
