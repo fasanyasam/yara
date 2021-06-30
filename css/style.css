@@ -1,0 +1,105 @@
+
+:root{
+    --lora: 'Lora', serif;
+    --roboto: 'Roboto', sans-serif;
+    --orange:#F6A51A ;
+}
+
+body{
+    margin: 0;
+    padding: 0;  
+    width: 100vw
+}
+.btn-con{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#bg{
+    height: 100%;
+    width: 80%;
+    position: absolute;
+    right: -200px;
+}
+.navbar{
+    padding: 30px 0;
+}
+.rounded-card{
+    border: solid 2px;
+    border-radius: 20px;
+    padding: 40px 0;
+}
+
+h1{
+    font-family: var(--lora);
+    font-size: 32px;
+    font-weight: bold;
+}
+#header{
+    font: var(--lora) 64px bold;
+    font-size: 64px;
+    font-weight: bold;
+}
+.icon{
+    height: 40px;
+    width: 40px;
+}
+ 
+.small-button-text{
+    font-size: 12px;
+    font-family:  'Roboto', sans-serif;
+}
+.bold-button-text{
+    font-size: 16px;
+    font-weight: bold;
+    font-family:  'Roboto', sans-serif;
+}
+.app-download{
+    width: 274px;
+    height: 70px;
+    text-align: left;
+}
+
+.paragraph-text{
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* .circle{
+    width: 344px;
+    height: 344px;
+} */
+#pattern{
+    position: absolute ;
+    z-index: -3;
+    height: 100%;
+    width: auto;
+}
+#product, #image{
+    position: relative;
+}
+#circle, #shape{
+    position: absolute;
+}
+#phone, #device{
+    position: absolute;
+}
+.dotted-circle{
+    border: dotted 2px orange;
+    height: 65px;
+    width: 65px;
+    margin: auto;
+}
+
+.product-list{
+    padding: 10px ;
+}
+
+/* main{
+    background-image: url(../images/Pattern.svg);
+    background-size: 40rem;
+    background-repeat: no-repeat;
+    position: absolute;
+    right:-10%;
+} */
+
